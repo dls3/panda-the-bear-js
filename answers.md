@@ -21,3 +21,39 @@ body.style.backgroundColor = 'grey'
 5
 highlight = document.querySelectorAll('.highlight')
 highlight.forEach(function(item) {item.style.color = 'blue'})
+
+6
+header = document.querySelectorAll('h1')
+header.forEach(function(item) {item.style.fontFamily = 'monospace'})
+
+7
+roundIcon = document.querySelectorAll('a.action-icon-bg')
+roundIcon.forEach(function(item) {item.style.backgroundColor = 'grey'})
+
+8
+nameField = document.querySelector('input#name.contact-info')
+nameField.placeholder = 'identify yourself'
+
+9
+messageField = document.querySelector('textarea#message')
+messageField.placeholder = 'state your business'
+
+10
+nameField = document.querySelector('input#name.contact-info')
+nameField.value = 'your nemesis'
+
+11
+emailField = document.querySelector('input#email.contact-info')
+emailField.value = 'koalathebear@gmail.com'
+
+12
+submitButton = document.querySelector('input#submit')
+submitButton.value = 'En garde!'
+
+13
+submitButton = document.querySelector('input#submit')
+submitButton.disabled = 'disabled'
+
+14
+sideBar = document.querySelector('form')
+sideBar = sideBar.reset()
