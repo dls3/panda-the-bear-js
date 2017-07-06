@@ -57,3 +57,34 @@ submitButton.disabled = 'disabled'
 14
 sideBar = document.querySelector('form')
 sideBar = sideBar.reset()
+
+------------- PART 2 -------------
+
+1a
+skills = document.querySelectorAll('.bar-default')[2]
+timeTravel = document.querySelector('#time-travel')
+skills.removeChild(timeTravel)
+
+1b
+pikachu = document.querySelector('.portfolio-container')
+pikaCopy = document.querySelector('.profile-image').cloneNode()
+pikachu.appendChild(pikaCopy)
+
+2
+pikachu = document.querySelector('.portfolio-container')
+for (var i = 0; i < 10; i++) {pikaCopy = document.querySelector('.profile-image').cloneNode();
+pikachu.appendChild(pikaCopy)}
+
+3
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+
+var rightSpan = document.createElement('span');
+var currentTime = new Date();
+var bioInfo = document.querySelector('.bio-info');
+bioInfo.appendChild(leftSpan);
+rightSpan.innerHTML = currentTime;
+bioInfo.appendChild(rightSpan);
